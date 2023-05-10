@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+        <div class="card text-center">
+          <div class="card-body">
+              <h3>{{texto}}
+              </h3>
+              <span *ngIf = "submitted && createProducto.invalid" class = "badge badge-danger">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+              <form [formGroup]="createProducto" (ngSubmit)="agregarEditarProducto()">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" form-control-lg
+                    formControlName = "nombre" placeholder="Nombre">
+                  </div>
+                  <div class="col">
+                    <input type="number" class="form-control" form-control-lg
+                    formControlName = "bpm" placeholder="bpm">
+                  </div>
+                </div>
+                <div class="class row">
+                  <div class="col mt-3">
+                    <input type="text" class="form-control" form-control-lg
+                    formControlName = "escala" placeholder="Escala">
+                  </div>
+                  <div class="col mt-3">
+                    <input type="number" class="form-control" form-control-lg
+                    formControlName = "precio" placeholder="Precio">
+                  </div>
+                </div>
+                <div class="col mt-3">
+                  <input type="text" class="form-control" form-control-lg
+                  formControlName = "descripcion" placeholder="Descripción">
+                  <div class="mt-3">
+                    <div>
+                      <h5>Agregar Imagen</h5>
+                      <input type ="file" (change) = "uploadImagen($event)">
+                    </div>
+                    <div>
+                      <h5>Agregar Pista</h5>
+                      <input type ="file" (change) = "uploadPista($event)">
+                    </div>
+                    <button type="submit" class="btn btn-dark mt-3" >{{botonAddEdit}}</button>
+                  </div>
+                  <button type="text" class="btn btn-secondary mt-2"routerLink = "/listProductos" >Volver</button>
+                </div>
+
+              </form>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

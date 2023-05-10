@@ -1,0 +1,33 @@
+<!--
+<h2>Registro de usuario</h2>
+<form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password">
+    </div>
+    <input type="submit" value="Enviar">
+</form> -->
+
+<div id="todo">
+  <div id="principal_div">
+      <h2>Register</h2>
+      <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="text" class="form-control" formControlName="email">
+          </div>
+          <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" formControlName="password">
+          </div>
+
+          <input id="enviar" type="submit" value="Enviar">
+          <button type="text" class="btn btn-secondary mt-2"routerLink = "/login" >Volver</button>
+      </form>
+  </div>
+
+</div>

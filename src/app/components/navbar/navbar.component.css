@@ -1,0 +1,10 @@
+#navbar {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 100px;
+  background-color: #3ea5ee;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}

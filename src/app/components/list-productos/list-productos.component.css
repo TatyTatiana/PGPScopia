@@ -1,0 +1,24 @@
+.btn btn-dark:last-child {
+  justify-content: flex-end;
+}
+.mt-rigth{
+  position: relative;
+  left: 1065px;
+}
+
+.ml-2{
+  left: 50px;
+}
+
+i {
+  font-size: larger;
+  padding: 0 10px;
+}
+
+.trash {
+  color: #d90429;
+}
+
+.edit {
+    color: #4361ee;
+}
